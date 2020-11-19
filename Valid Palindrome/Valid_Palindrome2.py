@@ -5,7 +5,4 @@ class Solution:
         for word in s:
             if word.isalnum():
                 lst.append(word)
-        if lst == lst[::-1]:
-            return 1
-        else:
-            return 0
+        return lst == lst[::-1]
